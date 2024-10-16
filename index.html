@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="video/photo_2024-08-22_16-22-43.jpg" alt="Аватар" class="avatar">
+        <div class="info-panel">
+            <h2 class="highlight">Здарова, я <span style="color: #8A2BE2;">Luis</span></h2>
+            <p>В общем, сделал это за ночь кучу проблем с этим было. О себе расскажу там справа в панельках. Время уже 5:40, а мне в колледж еще ехать.</p>
+        </div>
+    </header>
+
+    <section class="music-player">
+        <img id="track-cover" src="video/VurjbcaOYJ9vQKLeuKSpY3cU7AJTgYCuJLdtUZXcZqM3ariFE-ZtcYHwdTZTNHsaT8-3sCwP6Tc35M-b5ZivQUuY.jpg" alt="Обложка" />
+        <audio id="background-music" preload="auto"></audio>
+        <div class="button-container">
+            <button id="prev-track"><i class="fas fa-backward"></i></button>
+            <button id="toggle-music"><i class="fas fa-play"></i></button>
+            <button id="next-track"><i class="fas fa-forward"></i></button>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="icon-container">
+            <div class="icon" id="about-panel">
+                <h3>Обо мне</h3>
+                <p class="panel-text">Зовут меня Сергей мне 17 лет учусь в кмб4</p>
+            </div>
+            <div class="icon" id="experience-panel">
+                <h3>Опыт</h3>
+                <p class="panel-text">Мой опыт работы ну пишу че-то там че-то тут вот yml всякие переписываю плагины какие-то для проекта делаю</p>
+            </div>
+            <div class="icon" id="additional-panel">
+                <h3>Дополнительно</h3>
+                <p class="panel-text">Обычный человек шарю за работу за пк оч много в нем сижу короче вот делаю всякие проектики занимаюсь короче всяким</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="social-links">
+        <a href="https://vk.com/id511955948" target="_blank"><i class="fab fa-vk"></i></a>
+        <a href="https://t.me/luiskasss" target="_blank"><i class="fab fa-telegram"></i></a>
+    </div>
+
+    <div id="spinner" class="spinner">
+        <div class="arm arm1"></div>
+        <div class="arm arm2"></div>
+        <div class="arm arm3"></div>
+        <div class="center"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

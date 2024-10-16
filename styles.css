@@ -1,0 +1,156 @@
+/* Основные стили */
+body {
+    background-image: url('video/Hello Kitty Татуировки.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.info-panel {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 230px;
+    margin-top: 50px;
+}
+
+.highlight {
+    color: #8A2BE2;
+    text-shadow: 0 0 5px #8A2BE2, 0 0 10px #8A2BE2, 0 0 15px #FF00FF;
+    animation: sparkle 1.5s infinite alternate;
+}
+
+@keyframes sparkle {
+    0% { text-shadow: 0 0 5px #8A2BE2, 0 0 10px #8A2BE2, 0 0 15px #FF00FF; }
+    100% { text-shadow: 0 0 10px #8A2BE2, 0 0 20px #FF00FF; }
+}
+
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.music-player img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.button-container button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.about {
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: -70px; 
+}
+
+.icon-container {
+    display: flex;
+    gap: 70px;
+    margin-left: 600px; 
+}
+
+.icon {
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px; 
+    border-radius: 8px;
+    text-align: center;
+    width: 150px; 
+    height: 150px; 
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.5s ease; 
+    max-height: 40px; 
+}
+
+.icon:hover {
+    max-height: 200px; 
+}
+
+.icon h3 {
+    color: #8A2BE2; 
+    text-shadow: 0 0 5px #8A2BE2, 0 0 10px #8A2BE2, 0 0 15px #FF00FF;
+    margin: 0;
+    font-size: 1.5em; 
+}
+
+.panel-text {
+    display: none; 
+    color: #fff; 
+    margin-top: 10px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0; 
+    transform: translateY(-10px); 
+}
+
+.icon:hover .panel-text {
+    display: block; 
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.social-links {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Спиннер */
+.spinner {
+    position: fixed;
+    bottom: 50px; /* Увеличьте это значение, чтобы поднять спиннер выше */
+    left: 100px; /* Увеличьте это значение, чтобы переместить спиннер правее */
+    width: 120px; /* Увеличьте размер спиннера */
+    height: 120px; /* Увеличьте размер спиннера */
+    background-image: url('video/1692735849_grizly-club-p-kartinki-spinner-bez-fona-54-Photoroom.png'); /* Путь к вашему изображению */
+    background-size: contain; /* Изображение будет подгоняться по размеру спиннера */
+    background-repeat: no-repeat; /* Без повторения изображения */
+    cursor: pointer;
+    transform-origin: center;
+}
