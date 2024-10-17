@@ -154,3 +154,32 @@ header {
     cursor: pointer;
     transform-origin: center;
 }
+.download-link {
+    color: #8A2BE2;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+.icon {
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px; 
+    border-radius: 8px;
+    text-align: center;
+    width: 150px; 
+    height: auto; /* Измените на auto для статичного размера */
+}
+#resume-panel {
+    position: fixed; /* Фиксируем позицию */
+    top: 20px; /* Расстояние от верхнего края */
+    right: 20px; /* Расстояние от правого края */
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px; 
+    border-radius: 8px;
+    text-align: center;
+    width: 150px; /* Устанавливаем ширину */
+    height: auto; /* Устанавливаем фиксированную высоту, если нужно */
+    z-index: 1000; /* Убедитесь, что панель выше остальных элементов */
+}
+.spinner {
+    user-select: none; /* Запретить выделение текста при взаимодействии со спиннером */
+}
